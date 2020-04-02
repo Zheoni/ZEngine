@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeWorkspace" PROJECT_DIR="$PROJECT_DIR$" />
+  <component name="CidrRootsConfiguration">
+    <sourceRoots>
+      <file path="$PROJECT_DIR$/vendor" />
+    </sourceRoots>
+    <libraryRoots>
+      <file path="$PROJECT_DIR$/glad" />
+      <file path="$PROJECT_DIR$/glfw" />
+      <file path="$PROJECT_DIR$/glm" />
+      <file path="$PROJECT_DIR$/imgui" />
+      <file path="$PROJECT_DIR$/stb_image" />
+      <file path="$PROJECT_DIR$/vendor/glad" />
+      <file path="$PROJECT_DIR$/vendor/glfw" />
+      <file path="$PROJECT_DIR$/vendor/glm" />
+      <file path="$PROJECT_DIR$/vendor/imgui" />
+      <file path="$PROJECT_DIR$/vendor/stb_image" />
+    </libraryRoots>
+  </component>
+</project>
