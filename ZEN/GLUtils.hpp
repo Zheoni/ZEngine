@@ -5,10 +5,7 @@
 #ifndef _GLUTILS_HPP_
 #define _GLUTILS_HPP_
 
-#include <glad/glad.h>
-
 #include <csignal>
-#include <cstdio>
 
 #define ASSERT(x) if (!(x)) std::raise(SIGTRAP)
 #define GLCall(x) GLClearError(); x; ASSERT(GLLogCall(#x, __FILE__, __LINE__))

@@ -5,6 +5,7 @@
 #include "VertexArray.hpp"
 
 #include "GLUtils.hpp"
+#include <glad/glad.h>
 
 namespace zen {
     VertexArray::VertexArray() : m_RendererID(0) {

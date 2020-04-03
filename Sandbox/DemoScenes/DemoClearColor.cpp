@@ -6,6 +6,7 @@
 
 #include "ZEN/GLUtils.hpp"
 #include <imgui/imgui.h>
+#include <glad/glad.h>
 
 namespace Sandbox {
     DemoClearColor::~DemoClearColor() {

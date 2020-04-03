@@ -1,9 +1,9 @@
 //
 // Created by Francisco José Sánchez Moreno on 29/03/2020.
 //
-
-#include "GLUtils.hpp"
 #include "IndexBuffer.hpp"
+#include "GLUtils.hpp"
+#include <glad/glad.h>
 
 namespace zen {
     IndexBuffer::IndexBuffer(const unsigned int *data, unsigned int count) : m_RendererId(0), m_Count(count) {

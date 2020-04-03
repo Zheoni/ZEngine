@@ -3,7 +3,8 @@
 //
 
 #include "Renderer.hpp"
-#include <iostream>
+#include "GLUtils.hpp"
+#include <glad/glad.h>
 
 namespace zen {
     void Renderer::Draw(const VertexArray &va, const IndexBuffer &ib, const Shader &shader) const {

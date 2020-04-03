@@ -5,13 +5,9 @@
 #ifndef _RENDERER_HPP_
 #define _RENDERER_HPP_
 
-
-#include <glad/glad.h>
-
 #include "VertexArray.hpp"
 #include "IndexBuffer.hpp"
 #include "Shader.hpp"
-
 
 namespace zen {
     class Renderer {

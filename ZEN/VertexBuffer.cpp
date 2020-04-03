@@ -3,8 +3,8 @@
 //
 
 #include "VertexBuffer.hpp"
-
 #include "GLUtils.hpp"
+#include <glad/glad.h>
 
 namespace zen {
     VertexBuffer::VertexBuffer(const void *data, unsigned int size) : m_RendererId(0) {

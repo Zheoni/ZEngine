@@ -7,13 +7,11 @@
 
 #include <string>
 
-#include "GLUtils.hpp"
-
 namespace zen {
 
     class Texture {
     public:
-        Texture(const std::string &path);
+        explicit Texture(const std::string &path);
 
         ~Texture();
 

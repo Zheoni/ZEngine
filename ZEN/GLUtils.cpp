@@ -4,6 +4,7 @@
 
 #include "GLUtils.hpp"
 
+#include <glad/glad.h>
 #include <iostream>
 
 void GLClearError() {

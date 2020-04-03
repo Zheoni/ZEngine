@@ -3,7 +3,8 @@
 //
 
 #include "Texture.hpp"
-
+#include "GLUtils.hpp"
+#include <glad/glad.h>
 #include <stb_image.h>
 
 namespace zen {

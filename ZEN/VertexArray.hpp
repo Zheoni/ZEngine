@@ -23,6 +23,4 @@ namespace zen {
     };
 }
 
-
-
 #endif //_VERTEXARRAY_H_

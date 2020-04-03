@@ -6,7 +6,6 @@
 #define _VERTEXBUFFER_H_
 
 #include <initializer_list>
-#include <algorithm>
 
 namespace zen {
     class VertexBuffer {

@@ -6,7 +6,7 @@
 #define _VERTEXBUFFERLAYOUT_H_
 
 #include <vector>
-#include "GLUtils.hpp"
+#include <glad/glad.h>
 
 namespace zen {
     struct VertexBufferElement {
