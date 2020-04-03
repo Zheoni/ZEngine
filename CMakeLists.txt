@@ -12,7 +12,7 @@ add_subdirectory(vendor/glm/)
 add_subdirectory(vendor/imgui/)
 add_subdirectory(ZEN/)
 
-add_executable(OpenGL main.cpp Sandbox/Scene.hpp Sandbox/DemoScenes/DemoClearColor.cpp Sandbox/DemoScenes/DemoClearColor.hpp Sandbox/DemoScenes/DemoTriangle.cpp Sandbox/DemoScenes/DemoTriangle.hpp Sandbox/DemoScenes/DemoTexture2D.cpp Sandbox/DemoScenes/DemoTexture2D.hpp)
+add_executable(OpenGL main.cpp Sandbox/Scene.hpp Sandbox/DemoScenes/DemoClearColor.cpp Sandbox/DemoScenes/DemoClearColor.hpp Sandbox/DemoScenes/DemoTriangle.cpp Sandbox/DemoScenes/DemoTriangle.hpp Sandbox/DemoScenes/DemoTexture2D.cpp Sandbox/DemoScenes/DemoTexture2D.hpp Sandbox/DemoScenes/DemoRainbowTriangle.cpp Sandbox/DemoScenes/DemoRainbowTriangle.hpp)
 target_link_libraries(OpenGL glfw)
 target_link_libraries(OpenGL glad)
 target_link_libraries(OpenGL stb_image)
