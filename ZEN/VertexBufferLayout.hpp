@@ -2,8 +2,7 @@
 // Created by Francisco José Sánchez Moreno on 29/03/2020.
 //
 
-#ifndef _VERTEXBUFFERLAYOUT_H_
-#define _VERTEXBUFFERLAYOUT_H_
+#pragma once
 
 #include <vector>
 #include <glad/glad.h>
@@ -52,6 +51,3 @@ namespace zen {
         void _push(const VertexBufferElement& element);
     };
 }
-
-
-#endif //_VERTEXBUFFERLAYOUT_H_

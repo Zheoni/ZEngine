@@ -2,8 +2,7 @@
 // Created by Francisco José Sánchez Moreno on 29/03/2020.
 //
 
-#ifndef _RENDERER_HPP_
-#define _RENDERER_HPP_
+#pragma once
 
 #include "VertexArray.hpp"
 #include "IndexBuffer.hpp"
@@ -16,5 +15,3 @@ namespace zen {
         void Clear() const;
     };
 }
-
-#endif //_RENDERER_HPP_

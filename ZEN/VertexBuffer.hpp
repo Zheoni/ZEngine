@@ -2,8 +2,7 @@
 // Created by Francisco José Sánchez Moreno on 29/03/2020.
 //
 
-#ifndef _VERTEXBUFFER_H_
-#define _VERTEXBUFFER_H_
+#pragma once
 
 #include <initializer_list>
 
@@ -21,6 +20,3 @@ namespace zen {
         unsigned int m_RendererId{};
     };
 }
-
-
-#endif //_VERTEXBUFFER_H_

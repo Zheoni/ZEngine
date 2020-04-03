@@ -2,8 +2,7 @@
 // Created by Francisco José Sánchez Moreno on 31/03/2020.
 //
 
-#ifndef _DEMOCLEARCOLOR_HPP_
-#define _DEMOCLEARCOLOR_HPP_
+#pragma once
 
 #include "Sandbox/Scene.hpp"
 
@@ -20,6 +19,3 @@ namespace Sandbox {
         float m_ClearColor[4];
     };
 }
-
-
-#endif //_DEMOCLEARCOLOR_HPP_

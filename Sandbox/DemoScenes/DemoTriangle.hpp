@@ -2,8 +2,7 @@
 // Created by Francisco J. Sanchez on 01/04/2020.
 //
 
-#ifndef _DEMOTRIANGLE_HPP_
-#define _DEMOTRIANGLE_HPP_
+#pragma once
 
 #include "Sandbox/Scene.hpp"
 #include "ZEN/zen.h"
@@ -37,6 +36,3 @@ namespace Sandbox {
         zen::Renderer m_Renderer;
     };
 }
-
-
-#endif // _DEMOTRIANGLE_HPP_

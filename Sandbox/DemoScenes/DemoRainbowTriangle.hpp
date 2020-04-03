@@ -2,8 +2,7 @@
 // Created by Francisco J. Sanchez on 03/04/2020.
 //
 
-#ifndef _DEMORAINBOWTRIANGLE_HPP_
-#define _DEMORAINBOWTRIANGLE_HPP_
+#pragma once
 
 #include "Sandbox/Scene.hpp"
 #include "ZEN/zen.h"
@@ -38,5 +37,3 @@ namespace Sandbox {
         zen::Renderer m_Renderer;
     };
 }
-
-#endif // _DEMORAINBOWTRIANGLE_HPP_

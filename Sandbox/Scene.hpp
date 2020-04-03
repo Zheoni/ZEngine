@@ -2,8 +2,7 @@
 // Created by Francisco José Sánchez Moreno on 31/03/2020.
 //
 
-#ifndef _DEMOSCENE_HPP_
-#define _DEMOSCENE_HPP_
+#pragma once
 
 namespace Sandbox {
 
@@ -18,5 +17,3 @@ namespace Sandbox {
     };
 
 }
-
-#endif //_DEMOSCENE_HPP_

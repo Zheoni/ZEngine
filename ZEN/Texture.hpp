@@ -2,8 +2,7 @@
 // Created by Francisco José Sánchez Moreno on 30/03/2020.
 //
 
-#ifndef _TEXTURE_HPP_
-#define _TEXTURE_HPP_
+#pragma once
 
 #include <string>
 
@@ -31,6 +30,3 @@ namespace zen {
     };
 
 }
-
-
-#endif //_TEXTURE_HPP_

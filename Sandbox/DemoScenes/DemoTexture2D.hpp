@@ -2,8 +2,7 @@
 // Created by Francisco J. Sanchez on 02/04/2020.
 //
 
-#ifndef _DEMOTEXTURE2D_HPP_
-#define _DEMOTEXTURE2D_HPP_
+#pragma once
 
 #include "Sandbox/Scene.hpp"
 #include "ZEN/zen.h"
@@ -36,6 +35,3 @@ namespace Sandbox {
     };
 
 }
-
-
-#endif // _DEMOTEXTURE2D_HPP_

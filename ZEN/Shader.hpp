@@ -2,8 +2,7 @@
 // Created by Francisco José Sánchez Moreno on 30/03/2020.
 //
 
-#ifndef _SHADER_H_
-#define _SHADER_H_
+#pragma once
 
 #include <string>
 #include <initializer_list>
@@ -51,6 +50,3 @@ namespace zen {
         int GetUniformLocation(const std::string& name);
     };
 }
-
-
-#endif //_SHADER_H_

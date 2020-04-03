@@ -2,8 +2,7 @@
 // Created by Francisco José Sánchez Moreno on 29/03/2020.
 //
 
-#ifndef _VERTEXARRAY_H_
-#define _VERTEXARRAY_H_
+#pragma once
 
 #include "VertexBuffer.hpp"
 #include "VertexBufferLayout.hpp"
@@ -22,5 +21,3 @@ namespace zen {
         unsigned int m_RendererID;
     };
 }
-
-#endif //_VERTEXARRAY_H_
