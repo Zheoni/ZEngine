@@ -34,9 +34,9 @@ namespace Sandbox {
         ImGui::Separator();
         if (ImGui::Button("Reset")) {
             m_Translation = glm::vec3((float) m_Width / 2, (float) m_Height / 2, 0.0f);
-            m_Scale = glm::vec3(300, 300, 1);
+            m_Scale = glm::vec3(300.0f, 300.0f, 1.0f);
             m_Rotation = 0.0f;
-            std::fill(m_Color, m_Color + 3 * sizeof(float), 1.0f);
+            std::fill(m_Color, m_Color + 4, 1.0f);
         }
     }
 
@@ -62,7 +62,7 @@ namespace Sandbox {
 
         glfwGetWindowSize(glfwGetCurrentContext(), &m_Width, &m_Height);
 
-        m_Translation = glm::vec3((float) m_Width / 2, (float) m_Height / 2, 0);
+        m_Translation = glm::vec3((float) m_Width / 2, (float) m_Height / 2, 0.0f);
         m_Proj = glm::ortho(0.0f, (float) m_Width, 0.0f, (float) m_Height, -1.0f, 1.0f);
 
         zen::VertexBufferLayout layout;
