@@ -26,8 +26,11 @@ namespace Sandbox {
 
         glm::mat4 m_Proj, m_View, m_Model;
 
-        zen::Shader m_Shader;
+        zen::Shader m_Shader, m_Shader2;
         zen::Renderer m_Renderer;
+
+        bool m_ShowWireFrame;
+        float m_RotateSpeed[3];
 
         float m_Color[4];
     };

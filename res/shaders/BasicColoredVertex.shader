@@ -1,16 +1,16 @@
 #shader vertex
 #version 330 core
 
-layout(location = 0) in vec4 position;
-layout(location = 1) in vec3 v_Color;
+layout(location = 0) in vec3 position;
+layout(location = 1) in vec4 v_Color;
 
-out vec3 color;
+out vec4 color;
 
 uniform mat4 u_MVP;
 
 void main()
 {
-    gl_Position = u_MVP * position;
+    gl_Position = u_MVP * vec4(position, 1.0f);
     color = v_Color;
 }
 
@@ -19,9 +19,9 @@ void main()
 
 layout(location = 0) out vec4 fragment;
 
-in vec3 color;
+in vec4 color;
 
 void main()
 {
-    fragment = vec4(color, 1.0);
+    fragment = color;
 }
