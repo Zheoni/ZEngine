@@ -9,8 +9,11 @@
 
 namespace Sandbox {
 
-    void DemoRainbowTriangle::OnRender() {
-        Scene::OnRender();
+    void DemoRainbowTriangle::OnRender(float deltaTime) {
+        Scene::OnRender(deltaTime);
+
+        m_Rotation = deltaTime;
+
         m_Model = glm::mat4(1.0f);
         m_Model = glm::translate(m_Model, m_Translation);
         if (m_EnableRotation) m_Model = glm::rotate(m_Model, m_Rotation, glm::vec3(0, 0, 1));
@@ -66,10 +69,5 @@ namespace Sandbox {
         layout.PushFloat(2);
         layout.PushFloat(3);
         m_va.AddBuffer(m_vb, layout);
-    }
-
-    void DemoRainbowTriangle::OnUpdate(float deltaTime) {
-        Scene::OnUpdate(deltaTime);
-        m_Rotation = deltaTime;
     }
 }

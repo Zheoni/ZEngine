@@ -1,5 +1,5 @@
 //
-// Created by Francisco J. Sanchez on 02/04/2020.
+// Created by Francisco J. Sanchez on 03/04/2020.
 //
 
 #pragma once
@@ -9,29 +9,27 @@
 
 namespace Sandbox {
 
-    class DemoTexture2D : public Scene {
+    class DemoCube : public Scene {
     public:
-        DemoTexture2D();
+        DemoCube();
+
+        ~DemoCube() override;
 
         void OnRender(float deltaTime) override;
 
         void OnImGuiRender() override;
+
     private:
-        int m_Width, m_Height;
-
-        zen::VertexArray m_va;
-        zen::IndexBuffer m_ib;
         zen::VertexBuffer m_vb;
+        zen::IndexBuffer m_ib;
+        zen::VertexArray m_va;
 
-        glm::vec3 m_Translation;
-        glm::vec3 m_Scale;
-        float m_Rotation;
         glm::mat4 m_Proj, m_View, m_Model;
 
         zen::Shader m_Shader;
-        zen::Texture m_Texture;
-
         zen::Renderer m_Renderer;
+
+        float m_Color[4];
     };
 
 }

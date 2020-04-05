@@ -9,8 +9,8 @@
 
 namespace Sandbox {
 
-    void DemoTexture2D::OnRender() {
-        Scene::OnRender();
+    void DemoTexture2D::OnRender(float deltaTime) {
+        Scene::OnRender(deltaTime);
         m_Model = glm::mat4(1.0f);
         m_Model = glm::translate(m_Model, m_Translation);
         m_Model = glm::rotate(m_Model, m_Rotation, glm::vec3(0, 0, 1));

@@ -9,8 +9,8 @@
 
 namespace Sandbox {
 
-    void DemoTriangle::OnRender() {
-        Scene::OnRender();
+    void DemoTriangle::OnRender(float deltaTime) {
+        Scene::OnRender(deltaTime);
         m_Model = glm::mat4(1.0f);
         m_Model = glm::translate(m_Model, m_Translation);
         m_Model = glm::rotate(m_Model, m_Rotation, glm::vec3(0, 0, 1));

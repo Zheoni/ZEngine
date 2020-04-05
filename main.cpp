@@ -15,6 +15,7 @@
 #include "Sandbox/DemoScenes/DemoTriangle.hpp"
 #include "Sandbox/DemoScenes/DemoTexture2D.hpp"
 #include "Sandbox/DemoScenes/DemoRainbowTriangle.hpp"
+#include "Sandbox/DemoScenes/DemoCube.hpp"
 
 using namespace zen;
 
@@ -39,6 +40,9 @@ void ChangeDemo(int selection, Sandbox::Scene **pScene) {
             break;
         case 4:
             *pScene = new Sandbox::DemoRainbowTriangle();
+            break;
+        case 5:
+            *pScene = new Sandbox::DemoCube();
     }
 
 }
@@ -88,7 +92,7 @@ int main(int argc, const char** argv) {
     ImGui_ImplGlfw_InitForOpenGL(window, true);
     ImGui_ImplOpenGL3_Init(glsl_version);
 
-    const char* demos[] = { "None", "Clear color", "Triangle", "Texture 2D", "Rainbow Triangle" };
+    const char* demos[] = { "None", "Clear color", "Triangle", "Texture 2D", "Rainbow Triangle", "Cube" };
     const unsigned int nDemos = sizeof(demos) / sizeof(char*);
     static int current_selection = 0;
 
@@ -110,8 +114,7 @@ int main(int argc, const char** argv) {
     while(!glfwWindowShouldClose(window)) {
         renderer.Clear();
 
-        scene->OnUpdate(glfwGetTime());
-        scene->OnRender();
+        scene->OnRender(glfwGetTime());
 
         ImGui_ImplOpenGL3_NewFrame();
         ImGui_ImplGlfw_NewFrame();

@@ -11,8 +11,7 @@ namespace Sandbox {
         Scene() = default;
         virtual ~Scene() = default;
 
-        virtual void OnUpdate(float deltaTime) {}
-        virtual void OnRender() {}
+        virtual void OnRender(float deltaTime) {}
         virtual void OnImGuiRender() {};
     };
 

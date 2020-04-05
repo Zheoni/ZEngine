@@ -12,7 +12,7 @@ namespace Sandbox {
         inline DemoClearColor() : m_ClearColor{0.0f, 0.0f, 0.0f, 1.0f} {};
         ~DemoClearColor() override;
 
-        void OnRender() override;
+        void OnRender(float deltaTime) override;
         void OnImGuiRender() override;
 
     private:

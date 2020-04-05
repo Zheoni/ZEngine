@@ -13,7 +13,7 @@ namespace Sandbox {
     public:
         DemoTriangle();
 
-        void OnRender() override;
+        void OnRender(float deltaTime) override;
 
         void OnImGuiRender() override;
 
